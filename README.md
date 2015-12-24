@@ -10,3 +10,5 @@ Fontty is a Chrome extension that shows all your fonts and marks them in differe
 * `npm run run_dev` to start a dev env
 * `npm run build_production` to build a production ready package
 
+### STATUS
+[![Build Status](https://travis-ci.org/liuyanghejerry/fontty.svg?branch=1.0)](https://travis-ci.org/liuyanghejerry/fontty)

@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "4.1"
+  - "4.0"
+  - "0.12"
+  - "iojs"
+before_script:
+  - npm i
+  - npm i -g webpack
+  - npm i -g karma-cli
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+env:
+  - CI=1

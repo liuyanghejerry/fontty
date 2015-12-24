@@ -62,7 +62,7 @@ module.exports = {
         path: ['node_modules', './src'],
         addDependencyTo: webpack
       }),
-      autoprefixer({"browsers":["Chrome >= 30"]}),
+      autoprefixer({"browsers":["Chrome >= 30", "last 2 versions", "> 10%"]}),
       precss,
       postcssCalc,
     ];

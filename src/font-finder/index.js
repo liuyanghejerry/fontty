@@ -4,7 +4,7 @@ var isDeepestNode = (elm) => {
   return elm.childElementCount === 0;
 };
 var isContainTextNode = (elm) => {
-  return Array.from(elm.childNodes).filter((elm) => {
+  return Array.prototype.slice.call(elm.childNodes).filter((elm) => {
     return elm.nodeType === Node.TEXT_NODE && elm.nodeValue.trim().length > 0;
   }).length > 0;
 };
@@ -15,7 +15,10 @@ var isNonTextTag = (elm) => {
   return ['canvas', 'img', 'video', 'audio', 'script', 'style', 'link', 'meta', 'head'].indexOf(elm.tagName.toLowerCase()) < 0;
 };
 var isFontAwesome = (elm) => {
-  return Array.from(elm.classList).indexOf('fa') >= 0;
+  if(!elm || !elm.classList) {
+    return false;
+  }
+  return Array.prototype.slice.call(elm.classList).indexOf('fa') >= 0;
 };
 
 export function getTextNodes(elmArray) {

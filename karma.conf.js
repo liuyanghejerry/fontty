@@ -1,8 +1,10 @@
 var webpackConfig = require('./webpack.test.conf.js');
 
+var browsers = process.env.CI ? ['PhantomJS'] : ['Chrome'];
+
 module.exports = function(config) {
   config.set({
-    browsers: ['Chrome'],
+    browsers: browsers,
     files: [
       './src/**/*-test.js'
     ],
@@ -19,6 +21,7 @@ module.exports = function(config) {
     'plugins' : [
       'karma-mocha',
       'karma-chrome-launcher',
+      'karma-phantomjs-launcher',
       'karma-webpack',
     ]
   });
