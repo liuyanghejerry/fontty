@@ -11,7 +11,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 conf.plugins = [
   new webpack.DefinePlugin({
-    BUILD_DIST_PATH: '"/dist/production"',
+    BUILD_DIST_PATH: '"."',
   }),
   new ExtractTextPlugin('[name].css', {allChunks:true}),
   new webpack.optimize.OccurenceOrderPlugin(true),
