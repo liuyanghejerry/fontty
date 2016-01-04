@@ -1,6 +1,6 @@
 {
   "name": "Fontty",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -47,9 +47,11 @@
     "react": "^0.14.3",
     "react-addons-test-utils": "^0.14.3",
     "react-dom": "^0.14.3",
+    "react-icons": "^1.0.3",
     "shelljs": "^0.5.3",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "xpath-dom": "^0.2.1"
   }
 }

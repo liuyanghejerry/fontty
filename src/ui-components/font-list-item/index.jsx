@@ -1,12 +1,30 @@
 var React = require('react');
 var lodash = require('lodash');
+var xpath = require('xpath-dom');
 
 var FontListItem = React.createClass({
   componentDidMount() {
+    this.domIds = {};
     var color = lodash.clone(this.props.color);
     this.props.elements.forEach((elm) => {
+      var domId = xpath.getUniqueXPath(elm.element, document);
+      this.domIds[domId] = elm.element.style['background-color'];
       elm.element.style['background-color'] = color;
     });
+  },
+  componentWillUnmount() {
+    this.restoreBg();
+  },
+  restoreBg() {
+    this.props.elements.forEach((elm) => {
+      var domId = xpath.getUniqueXPath(elm.element, document);
+      var bgColor = this.domIds[domId];
+      if(bgColor === undefined) {
+        return;
+      }
+      elm.element.style['background-color'] = bgColor;
+    });
+    this.domIds = {};
   },
   render() {
     var color = lodash.clone(this.props.color);
@@ -18,8 +36,7 @@ var FontListItem = React.createClass({
           display: 'flex',
           flexDirection: 'row',
           cursor: 'auto',
-        }}
-        onMouseOver={this.props.onHover}>
+        }}>
         <span 
           className="font-color" 
           style={{

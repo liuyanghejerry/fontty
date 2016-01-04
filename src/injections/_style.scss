@@ -1,5 +1,12 @@
 @import '../ui-components/reset.css';
 
 #font-list-container {
-  
+  all: initial;
+  .font-list-header {
+    padding: 0 10px;
+    text-align: right;
+    .control {
+      cursor: pointer;
+    }
+  }
 }

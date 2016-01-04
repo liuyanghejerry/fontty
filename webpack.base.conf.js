@@ -44,7 +44,7 @@ module.exports = {
       // required to write "require('./style.css')"
       { test: /\.s?css$/,    loader: 'css-loader!postcss-loader' },
       // required for bootstrap icons
-      { test: /\.woff/,   loader: 'url-loader?limit=7000' },
+      { test: /\.woff2?/,   loader: 'url-loader?limit=102400' },
       { test: /\.ttf/,    loader: 'file-loader' },
       { test: /\.eot/,    loader: 'file-loader' },
       { test: /\.svg/,    loader: 'file-loader' },
