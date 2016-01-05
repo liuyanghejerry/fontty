@@ -1,6 +1,6 @@
 {
   "name": "Fontty",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "dependencies": {
     "archiver": {
       "version": "0.21.0",
@@ -4400,68 +4400,6 @@
               "version": "0.4.0",
               "from": "json5@>=0.4.0 <0.5.0",
               "resolved": "https://registry.npmjs.org/json5/-/json5-0.4.0.tgz"
-            }
-          }
-        }
-      }
-    },
-    "history": {
-      "version": "1.17.0",
-      "from": "history@>=1.13.1 <2.0.0",
-      "resolved": "https://registry.npmjs.org/history/-/history-1.17.0.tgz",
-      "dependencies": {
-        "deep-equal": {
-          "version": "1.0.1",
-          "from": "deep-equal@>=1.0.0 <2.0.0",
-          "resolved": "https://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz"
-        },
-        "invariant": {
-          "version": "2.2.0",
-          "from": "invariant@>=2.0.0 <3.0.0",
-          "resolved": "https://registry.npmjs.org/invariant/-/invariant-2.2.0.tgz",
-          "dependencies": {
-            "loose-envify": {
-              "version": "1.1.0",
-              "from": "loose-envify@>=1.0.0 <2.0.0",
-              "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz",
-              "dependencies": {
-                "js-tokens": {
-                  "version": "1.0.2",
-                  "from": "js-tokens@>=1.0.1 <2.0.0",
-                  "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz"
-                }
-              }
-            }
-          }
-        },
-        "query-string": {
-          "version": "3.0.0",
-          "from": "query-string@>=3.0.0 <4.0.0",
-          "resolved": "https://registry.npmjs.org/query-string/-/query-string-3.0.0.tgz",
-          "dependencies": {
-            "strict-uri-encode": {
-              "version": "1.0.2",
-              "from": "strict-uri-encode@>=1.0.0 <2.0.0",
-              "resolved": "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.0.2.tgz"
-            }
-          }
-        },
-        "warning": {
-          "version": "2.1.0",
-          "from": "warning@>=2.0.0 <3.0.0",
-          "resolved": "https://registry.npmjs.org/warning/-/warning-2.1.0.tgz",
-          "dependencies": {
-            "loose-envify": {
-              "version": "1.1.0",
-              "from": "loose-envify@>=1.0.0 <2.0.0",
-              "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz",
-              "dependencies": {
-                "js-tokens": {
-                  "version": "1.0.2",
-                  "from": "js-tokens@>=1.0.1 <2.0.0",
-                  "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz"
-                }
-              }
             }
           }
         }
@@ -28897,7 +28835,7 @@
     },
     "karma-phantomjs-launcher": {
       "version": "0.2.2",
-      "from": "karma-phantomjs-launcher@>=0.2.1 <0.3.0",
+      "from": "https://registry.npmjs.org/karma-phantomjs-launcher/-/karma-phantomjs-launcher-0.2.2.tgz",
       "resolved": "https://registry.npmjs.org/karma-phantomjs-launcher/-/karma-phantomjs-launcher-0.2.2.tgz"
     },
     "karma-sourcemap-loader": {
@@ -29013,11 +28951,6 @@
           }
         }
       }
-    },
-    "keymirror": {
-      "version": "0.1.1",
-      "from": "keymirror@>=0.1.1 <0.2.0",
-      "resolved": "https://registry.npmjs.org/keymirror/-/keymirror-0.1.1.tgz"
     },
     "lodash": {
       "version": "3.10.1",
@@ -30192,6 +30125,18 @@
       "from": "react-dom@>=0.14.3 <0.15.0",
       "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-0.14.3.tgz"
     },
+    "react-icons": {
+      "version": "1.0.3",
+      "from": "react-icons@*",
+      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-1.0.3.tgz",
+      "dependencies": {
+        "react-icon-base": {
+          "version": "1.0.0",
+          "from": "react-icon-base@1.0.0",
+          "resolved": "https://registry.npmjs.org/react-icon-base/-/react-icon-base-1.0.0.tgz"
+        }
+      }
+    },
     "shelljs": {
       "version": "0.5.3",
       "from": "shelljs@*",
@@ -31147,6 +31092,11 @@
           }
         }
       }
+    },
+    "xpath-dom": {
+      "version": "0.2.1",
+      "from": "xpath-dom@*",
+      "resolved": "https://registry.npmjs.org/xpath-dom/-/xpath-dom-0.2.1.tgz"
     }
   }
 }

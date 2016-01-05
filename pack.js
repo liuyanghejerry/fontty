@@ -10,6 +10,7 @@ manifest.version = npmPackageJson.version;
 
 mkdir('-p', 'dist/_package');
 cp('-rf', 'dist/production/*', 'dist/_package');
+cp('-rf', '_locales', 'dist/_package');
 cp('-f', 'icon.png', 'dist/_package');
 echo(JSON.stringify(manifest)).to('dist/_package/manifest.json');
 
